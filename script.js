@@ -4,7 +4,7 @@ const stories = [
         id: 1,
         title: "Space Adventure",
         icon: "fas fa-rocket",
-        description: "Blast off on an interstellar journey!",
+        description: "Blast off on an incredible interstellar journey!",
         template: `One day, {name} decided to build a {adjective} building out of {material}. They flew to the {place} and met a {animal} wearing a {clothing}. Together they {verb} through the galaxy eating {food} along the way. It was {emotion}! The end.`,
         prompts: [
             { type: "name", label: "A person's name", placeholder: "e.g., Alex" },
