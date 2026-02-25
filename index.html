@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-book-open"></i>
+            <h1>Mad Libs Fun</h1>
+        </div>
+        <p class="tagline">Fill in the blanks. Create a story. Laugh out loud!</p>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Step 1: Story Selection -->
+        <section id="step-1" class="step active">
+            <h2><i class="fas fa-list"></i> Choose Your Story</h2>
+            <div class="story-grid" id="story-options">
+                <!-- Story cards will be inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Step 2: Word Input -->
+        <section id="step-2" class="step">
+            <h2><i class="fas fa-keyboard"></i> Fill in the Words</h2>
+            <div class="form-container">
+                <h3 id="current-story-title"></h3>
+                <form id="word-form">
+                    <!-- Input fields will be generated here -->
+                </form>
+                <div class="button-group">
+                    <button id="back-to-stories" class="btn secondary">
+                        <i class="fas fa-arrow-left"></i> Back to Stories
+                    </button>
+                    <button id="generate-story" class="btn primary">
+                        Generate Story <i class="fas fa-magic"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 3: Story Display -->
+        <section id="step-3" class="step">
+            <h2><i class="fas fa-scroll"></i> Your Mad Libs Story</h2>
+            <div class="story-display">
+                <h3 id="completed-story-title"></h3>
+                <div class="story-text" id="completed-story"></div>
+                <div class="story-actions">
+                    <button id="start-over" class="btn secondary">
+                        <i class="fas fa-redo"></i> Start Over
+                    </button>
+                    <button id="share-story" class="btn">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                    <button id="copy-story" class="btn">
+                        <i class="fas fa-copy"></i> Copy Text
+                    </button>
+                    <button id="new-story" class="btn primary">
+                        Create Another <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructions -->
+        <aside class="instructions">
+            <h3><i class="fas fa-info-circle"></i> How to Play</h3>
+            <ol>
+                <li>Choose a story template</li>
+                <li>Fill in the requested words (be creative!)</li>
+                <li>Read your hilarious completed story</li>
+                <li>Share with friends or make another one!</li>
+            </ol>
+            <div class="word-types">
+                <h4>Word Types:</h4>
+                <p><strong>Noun:</strong> Person, place, or thing</p>
+                <p><strong>Verb:</strong> Action word</p>
+                <p><strong>Adjective:</strong> Describing word</p>
+                <p><strong>Adverb:</strong> Describes how something is done</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> for fun and learning</p>
+        <p class="footer-links">
+            <a href="#" id="view-history"><i class="fas fa-history"></i> History</a>
+            |
+            <a href="#" id="about-link"><i class="fas fa-question-circle"></i> About</a>
+            |
+            <a href="#" id="submit-story"><i class="fas fa-paper-plane"></i> Submit Story</a>
+        </p>
+    </footer>
+
+    <!-- Modals -->
+    <div id="history-modal" class="modal">
+        <!-- History content will go here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
